@@ -1,0 +1,62 @@
+ALL GET Type Methods
+====================
+localhost:8090/myapp/get/allEmps
+
+http://localhost:8090/myapp/get/allEmpException1
+
+localhost:8090/myapp/get/emp/id/123
+
+======================
+POST Method
+
+localhost:8090/createEmp
+{
+    "empId": 13,
+    "firstName": "DD",
+    "lastName": "Mishra"
+}
+
+localhost:8090/saveEmp
+
+x-www-form-urlencoded
+
+id=13
+fName=John
+lName=Abraham
+
+
+PUT Method
+==========
+http://localhost:8090/updateEmp
+
+{
+    "empId": 13,
+    "firstName": "DD",
+    "lastName": "Mishra"
+}
+
+PATCH Method
+============
+http://localhost:8090/updatePartialEmp?id=13&login=DD
+
+DELETE Method
+=============
+http://localhost:8090/deleteEmp/13
+
+File Upload
+===========
+http://localhost:8090/singleFile
+
+form-data
+
+file : <file path>
+
+
+http://localhost:8090/multipleFiles
+
+file : mango.jpg
+file : banana.jpg
+
+References
+How to use tags
+https://fastapi.tiangolo.com/tutorial/metadata/
